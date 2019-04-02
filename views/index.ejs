@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <header>
+      <h1><%= title %></h1>
+      <ul id="type">
+        <li data-type="dot">Dot</li>
+        <li data-type="column" class="selected">Column</li>
+      </ul>
+      <p>
+        Volume <input id="volume" type="range" min="0" max="100" value="60">
+      </p>
+    </header> 
+    <section class="right">
+      <!-- 左侧音乐栏 -->
+      <nav class="left">
+        <ul id="list">
+          <!-- title加上鼠标移上去显示名字 -->
+          <% music.forEach( name => { %>
+            <li title="<%= name %>"><%= name %></li>
+         <%}) %>
+          
+        </ul>
+    </nav> 
+      <!-- 主体内容 -->
+      <div class="right" id="box">
+
+      </div>
+    </section>
+  </body>
+  <script src="/javascripts/index.js"></script>
+</html>
