@@ -1,7 +1,7 @@
 ## 环境搭建
 - 1.express一个文件夹，express -e xxx（-e是另一种模板）
 - 2.进入文件夹安装一个自动监听工具npm install -g supervisor，supervisor和nodemon一样都是用以监听的工具
-- 3.别忘了npm install初始化一下
+- 3.别忘了npm init初始化一下
 
 ## 内容
 - 1. 首先我们使用supervisor来监控实现自动刷新
